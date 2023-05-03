@@ -640,6 +640,11 @@ margin-bottom: var(--mb-4);
   .footer__box ul li{
     display: block;
   }
+  .footer__link{
+    display: block;
+    width: max-content;
+    margin-bottom: var(--mb-1);
+  }
 }
 
 
