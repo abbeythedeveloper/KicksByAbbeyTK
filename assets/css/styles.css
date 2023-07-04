@@ -207,7 +207,7 @@ margin-bottom: var(--mb-4);
 /*===== HOME =====*/
 .home{
   background-color: var(--dark-color-lighten);
-  overflow: hidden;
+  height: 100vh;
 }
 
 .home__container{
@@ -291,8 +291,15 @@ margin-bottom: var(--mb-4);
 }
 /*===== FEATURED =====*/
 .featured__container{
-  row-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+.text-box
+{
+  width: 50%;
+  height: 100%;
+  background-color: #3e4136;
 }
 
 .sneaker{

@@ -1,0 +1,152 @@
+.carousel{
+    position: relative;
+    height: 600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carousel__image
+{
+    width: 30%;
+}
+
+.carousel__track-container
+{
+    background: #282a2e;
+    position: relative;
+    height: 90%;
+    overflow: hidden;
+}
+.carousel__track
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: .7s ease-in;
+}
+.carousel__slide
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel__button
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 30px;
+}
+.carousel__button--left
+{
+    left: -40px;
+}
+.carousel__button--right
+{
+    right: -40px;
+}
+.carousel__nav
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.carousel__indicator
+{
+    border: 0;
+    background-color: aqua;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.carousel__indicator.current-slide
+{
+    background: black;
+}
+.is-hidden{
+    display: none;
+}
+
+
+
+
+/* //carousel content css// */
+.carousel__content--inner
+{
+    /* background: powderblue; */
+}
+.text--box
+{
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.car--name
+{
+    color: orangered;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: aqua;
+}
+.car--type
+{
+    color: gray;
+    font-size: 80px;
+    font-weight: 900
+}
+
+
+
+
+
+
+
+.center {
+    background-color: #282a2e;
+    height: 100%;
+    position: relative;
+    width: 80vw;
+  }
+.center_beast {
+    position: absolute;
+    width: 100%;
+    padding-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .the {
+    color: orangered;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .beast {
+    color: gray;
+    font-size: 150px;
+    font-weight: 700;
+  }
+  .bike_home {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(transparent, #282a2e 75%);
+  }
+  .bike_home img {
+    width: 500px;
+    transform: scale();
+  }

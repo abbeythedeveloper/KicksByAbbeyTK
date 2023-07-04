@@ -1,293 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/carousel.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
-        <!-- ===== BOX ICONS ===== -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-        <title>KicksByAbbeyTK | home</title>
-    </head>
-    <body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"
+    ></script>
+    <title>KicksByAbbeyTK | home</title>
 
-        <!--===== HEADER =====-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-grid">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="bx bx-grid-alt"></i>
+    <style>
+      iframe {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+        <a href="#" class="nav__logo">KicksByAbbeyTK</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">Featured</a>
+            </li>
+            <li class="nav__item">
+              <a href="#women" class="nav__link">Women</a>
+            </li>
+            <li class="nav__item">
+              <a href="#new" class="nav__link">New</a>
+            </li>
+            <li class="nav__item">
+              <a href="./shop.html" class="nav__link">Shop</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__shop">
+          <i class="bx bx-shopping-bag"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="carousel">
+          <button class="carousel__button carousel__button--left is-hidden">
+            <i class="bx bx-left-arrow-alt"></i>
+          </button>
+          <div class="carousel__track-container mySwiper">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <div class="carousel__content--inner center">
+                  <div class="center_beast">
+                    <h1 class="the animate__animated animate__fadeInLeftBig">
+                      -DODGE-
+                    </h1>
+                    <p class="beast animate__animated animate__fadeInLeftBig">
+                      CHALLENGER
+                    </p>
+                  </div>
+                  <div
+                    class="bike_home animate__animated animate__fadeInRightBig"
+                  >
+                    <img src="assets/img/2018-Dodge-Challenger.png" alt="" />
+                  </div>
                 </div>
-                <a href="#" class="nav__logo">KicksByAbbeyTK</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#featured" class="nav__link">Featured</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#women" class="nav__link">Women</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#new" class="nav__link">New</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./shop.html" class="nav__link">Shop</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__shop">
-                    <i class='bx bx-shopping-bag'></i>
-                </div>
-            </nav>
-        </header>
+              </li>
+              <li class="carousel__slide">
+                <iframe
+                  width="100%"
+                  class="3d"
+                  frameborder="0"
+                  allowfullscreen
+                  mozallowfullscreen="true"
+                  webkitallowfullscreen="true"
+                  allow="autoplay; fullscreen; xr-spatial-tracking"
+                  xr-spatial-tracking
+                  execution-while-out-of-viewport
+                  execution-while-not-rendered
+                  web-share
+                  src="https://sketchfab.com/models/e4f24c4abba444c8b5b2f41ca86693c4/embed"
+                >
+                </iframe>
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="assets/img/new4.png" alt="" />
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="assets/img/new5.png" alt="" />
+              </li>
+              <li class="carousel__slide">
+                <img class="carousel__image" src="assets/img/new2.png" alt="" />
+              </li>
+            </ul>
+          </div>
+          <button class="carousel__button carousel__button--right">
+            <i class="bx bx-right-arrow-alt"></i>
+          </button>
+          <div class="carousel__nav">
+            <button class="carousel__indicator current-slide">
+              <img
+                src="assets/img/2018-Dodge-Challenger.png"
+                alt=""
+                style="width: 40px"
+              />
+            </button>
+            <button class="carousel__indicator">
+              <img src="assets/img/new3.png" alt="" style="width: 40px" />
+            </button>
+            <button class="carousel__indicator">
+              <img src="assets/img/new4.png" alt="" style="width: 40px" />
+            </button>
+            <button class="carousel__indicator">
+              <img src="assets/img/new5.png" alt="" style="width: 40px" />
+            </button>
+            <button class="carousel__indicator">
+              <img src="assets/img/new2.png" alt="" style="width: 40px" />
+            </button>
+          </div>
+        </div>
+      </section>
 
+      <!--===== FEATURED =====-->
+      <section class="featured__container" id="featured">
+        <div class="text-box">
+          <h1>teat</h1>
+        </div>
+        <iframe
+          title="Supercar Sian"
+          frameborder="0"
+          allowfullscreen
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          xr-spatial-tracking
+          execution-while-out-of-viewport
+          execution-while-not-rendered
+          web-share
+          src="https://sketchfab.com/models/dcbd2abedc344f00a66250f14ba01900/embed"
+        >
+        </iframe>
+      </section>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <div class="home__sneaker">
-                        <div class="home__shape"></div>
-                        <img src="./assets/img/imghome.png" alt="" srcset="" class="home__img">
-                    </div>
-                    <div class="home__data">
-                        <span class="home__new">New in</span>
-                        <h1 class="home__title">YEEZY BOOST <br>SPLY - 350</h1>
-                        <p class="home__description">Explore the new collection of sneakers</p>
-                        <a href="#" class="button">Explore now</a>
-                    </div>
-                </div>
+      <!--===== COLLECTION =====-->
+      <!--===== WOMEN SNEAKERS =====-->
 
-            </section>
-            
+      <!--===== OFFER =====-->
 
-            <!--===== FEATURED =====-->
-            <section class="featured section" id="featured">
-                <h2 class="section-title">FEATURED</h2>
+      <!--===== NEW COLLECTION =====-->
+      <!--===== NEWSLETTER =====-->
+    </main>
 
-                <div class="featured__container bd-grid">
-                    <article class="sneaker">
-                        <div class="sneaker__sale">Sale</div>
-                        <img src="assets/img/featured1.png" alt="Red sneaker" class="sneaker__image">
-                        <span class="sneaker__name">Nike jordan</span>
-                        <span class="sneaker__price">₦117,750</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </article>
-                    <article class="sneaker">
-                        <div class="sneaker__sale">Sale</div>
-                        <img src="assets/img/featured2.png" alt="Red sneaker" class="sneaker__image">
-                        <span class="sneaker__name">Nike jordan</span>
-                        <span class="sneaker__price">₦117,750</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </article>
-                    <article class="sneaker">
-                        <div class="sneaker__sale">Sale</div>
-                        <img src="assets/img/featured3.png" alt="Red sneaker" class="sneaker__image">
-                        <span class="sneaker__name">Nike jordan</span>
-                        <span class="sneaker__price">₦117,750</span>
-                        <a href="#" class="button-light">Add to cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </article>
-                </div>
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
+        <div class="footer__box">
+          <h3 class="footer__title">KicksByDera</h3>
+          <p class="footer__description">New Collection of shoes 2023</p>
+        </div>
+        <div class="footer__box">
+          <h3 class="footer__title">EXPLORE</h3>
+          <ul>
+            <li>
+              <a href="#home" class="footer__link">Home</a>
+            </li>
+            <li>
+              <a href="#featured" class="footer__link">Featured</a>
+            </li>
+            <li>
+              <a href="#women">Women</a>
+            </li>
+            <li>
+              <a href="#new" class="footer__link">New</a>
+            </li>
+            <li>
+              <a href="./shop.html" class="footer__link">Shop</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__box">
+          <h3 class="footer__title">SUPPORT</h3>
+          <ul>
+            <li>
+              <a href="#" class="footer__link">Products help</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Customer care</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Authorised services</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__box">
+          <a href="#" target="_blank" class="footer__social"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="#" target="_blank" class="footer__social"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="#" target="_blank" class="footer__social"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="#" target="_blank" class="footer__social"
+            ><i class="bx bxl-google"></i
+          ></a>
+          <a href="#" target="_blank" class="footer__social"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+      <p class="footer__copy">&#169; Abiodun ALL RIGHTS RESERVED</p>
+    </footer>
 
-            </section>
+    <!--===== MAIN JS =====-->
+    <script src="./assets/js/main.js"></script>
 
-            <!--===== COLLECTION =====-->
-            <section class="collection section">
-                <h2 class="section-title">Collections</h2>
-                <div class="collection__container bd-grid">
-                    <div class="collection__card">
-                        <div class="collection__data">
-                            <h3 class="collection__name">Nike</h3>
-                            <p class="collection__description">New collection 2023</p>
-                            <a href="#" class="button-light">Buy now <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                        </div>
+    <script type="text/javascript">
+      var iframe = document.getElementById("api-frame");
+      var uid = "7w7pAfrCfjovwykkEeRFLGw5SXS";
 
-                        <img src="./assets/img/collection1.png.png" alt="Nike collection" srcset="" class="collection__img-1">
-                    </div>
-                    <div class="collection__card">
-                        <div class="collection__data">
-                            <h3 class="collection__name">Adidas</h3>
-                            <p class="collection__description">New collection 2023</p>
-                            <a href="#" class="button-light">Buy now <i class='bx bx-right-arrow-alt button-icon'></i></a>
-                        </div>
+      // By default, the latest version of the viewer API will be used.
+      var client = new Sketchfab(iframe);
 
-                        <img src="assets/img/collection2.png" alt="Nike collection" srcset="" class="collection__img">
-                    </div>
-                </div>
-            </section>
+      // Alternatively, you can request a specific version.
+      // var client = new Sketchfab( '1.12.1', iframe );
 
-            <!--===== WOMEN SNEAKERS =====-->
-            <section class="women section" id="women">
-                <h2 class="section-title">WOMEN SNEAKERS</h2>
-                <div class="women__container bd-grid">
-                    <article class="sneaker">
-                        <img src="assets/img/women1.png" alt="" class="sneaker__image">
-                        <span class="sneaker__name">Nike Free trainers</span>
-                        <span class="sneaker__price">₦101,400</span>
-                        <a href="#" class="button-light">Buy Now<i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </article>
-                    <article class="sneaker">
-                        <img src="assets/img/women2.png" alt="" class="sneaker__image">
-                        <span class="sneaker__name">Nike Free trainers</span>
-                        <span class="sneaker__price">₦101,400</span>
-                        <a href="#" class="button-light">Buy Now<i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </article>
-                    <article class="sneaker">
-                        <img src="assets/img/women3.png" alt="" class="sneaker__image">
-                        <span class="sneaker__name">Nike Free trainers</span>
-                        <span class="sneaker__price">₦101,400</span>
-                        <a href="#" class="button-light">Buy Now<i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </article>
-                    <article class="sneaker">
-                        <img src="assets/img/women4.png" alt="" class="sneaker__image">
-                        <span class="sneaker__name">Nike Free trainers</span>
-                        <span class="sneaker__price">₦101,400</span>
-                        <a href="#" class="button-light">Buy Now<i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </article>
-                </div>
-            </section>
-
-            <!--===== OFFER =====-->
-            <section class="offer section">
-                <div class="offer__container bd-grid">
-                    <div class="offer__data">
-                        <h3 class="offer__title">50% OFF</h3>
-                        <p class="offer__description">In Adidas superstar sneakers</p>
-                        <a href="#" class="button">Shop now</a>
-                    </div>
-                    <img src="assets/img/offert.png" alt="" class="offer__img">
-                </div>
-            </section>
-
-            <!--===== NEW COLLECTION =====-->
-            <section class="new section" id="section">
-                <h2 class="section-title">NEW COLLECTION</h2>
-                <div class="new__container bd-grid">
-                    <div class="new__mens">
-                        <img src="assets/img/new1.png" alt="" class="new_mens-img">
-                        <h3 class="new__title">Mens Shoes</h3>
-                        <span class="new__price">From ₦101,400</span>
-                        <a href="#" class="button-light">View collection<i class='bx bx-right-arrow-alt button-icon'></i></a>
-                    </div>
-                    <div class="new__sneaker">
-
-                        <div class="new__sneaker-card">
-                            <img src="assets/img/new2.png" alt="" class="new__sneakers-img">
-                            <div class="new__sneaker-overlay">
-                                <a href="#" class="button">Add to cart</a>
-                            </div>
-                        </div>
-                        <div class="new__sneaker-card">
-                            <img src="assets/img/new3.png" alt="" class="new__sneakers-img">
-                            <div class="new__sneaker-overlay">
-                                <a href="#" class="button">Add to cart</a>
-                            </div>
-                        </div>
-                        <div class="new__sneaker-card">
-                            <img src="assets/img/new4.png" alt="" class="new__sneakers-img">
-                            <div class="new__sneaker-overlay">
-                                <a href="#" class="button">Add to cart</a>
-                            </div>
-                        </div>
-                        <div class="new__sneaker-card">
-                            <img src="assets/img/new5.png" alt="" class="new__sneakers-img">
-                            <div class="new__sneaker-overlay">
-                                <a href="#" class="button">Add to cart</a>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-            </section>
-
-            <!--===== NEWSLETTER =====-->
-            <section class="newsletter section">
-                <div class="newsletter__container bd-grid">
-                    <div>
-                        <h3 class="newsletter__title">Subscribe and get <br>10% OFF</h3>
-                        <p class="newsletter__description">Get 10% discount for all products</p>
-                    </div>
-
-                    <form action="" class="newsletter__subscribe">
-                        <input type="text" placeholder="Enter your E-mail" class="newsletter__input">
-                        <a href="./index.html" class="button">Subscribe</a>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__box">
-                    <h3 class="footer__title">KicksByDera</h3>
-                    <p class="footer__description">New Collection of shoes 2023</p>
-                </div>
-                <div class="footer__box">
-                    <h3 class="footer__title">EXPLORE</h3>
-                    <ul>
-                        <li>
-                            <a href="#home" class="footer__link">Home</a>
-                        </li>
-                        <li>
-                            <a href="#featured" class="footer__link">Featured</a>
-                        </li>
-                        <li>
-                            <a href="#women">Women</a>
-                        </li>
-                        <li>
-                            <a href="#new" class="footer__link">New</a>
-                        </li>
-                        <li>
-                            <a href="./shop.html" class="footer__link">Shop</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__box">
-                    <h3 class="footer__title">SUPPORT</h3>
-                    <ul>
-                        <li>
-                            <a href="#" class="footer__link">Products help</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Customer care</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Authorised services</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__box">
-                    <a href="#" target="_blank" class="footer__social"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" target="_blank" class="footer__social"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" target="_blank" class="footer__social"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" target="_blank" class="footer__social"><i class="bx bxl-google"></i></a>
-                    <a href="#" target="_blank" class="footer__social"><i class="bx bxl-whatsapp"></i></a>
-                </div>
-
-
-
-            </div>
-            <p class="footer__copy">&#169; Abiodun ALL RIGHTS RESERVED</p>
-        </footer>
-
-
-
-
-
-
-
-        <!--===== MAIN JS =====-->
-        <script src="./assets/js/main.js"></script>
-        
-    </body>
+      client.init(uid, {
+        success: function onSuccess(api) {
+          api.start();
+          api.addEventListener("viewerready", function () {
+            // API is ready to use
+            // Insert your code here
+            console.log("Viewer is ready");
+          });
+        },
+        error: function onError() {
+          console.log("Viewer error");
+        },
+      });
+    </script>
+  </body>
 </html>
